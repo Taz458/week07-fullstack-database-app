@@ -28,7 +28,7 @@ export default function MovieForm() {
         const dataToSend = { ...movieData, actors: actorsArray };
 
         try {
-            const result = await fetch("http://localhost:7070/movies", {
+            const result = await fetch("https://week07-fullstack-database-app.onrender.com/movies", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

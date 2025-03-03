@@ -11,7 +11,7 @@ export default function IndividualMoviePage() {
     // Fetch the movie data on component mount
     useEffect(() => {
         async function fetchMovie() {
-            const res = await fetch(`http://localhost:7070/movies/${id}?includes_actors=true`);
+            const res = await fetch(`https://week07-fullstack-database-app.onrender.com/movies/${id}?includes_actors=true`);
             const data = await res.json();
             setMovieInfo(data); // Set the movie data in state
         }
@@ -22,7 +22,7 @@ export default function IndividualMoviePage() {
     const handleDelete = async () => {
         try {
             // Send DELETE request to server
-            const response = await fetch(`http://localhost:7070/movies/${id}`, {
+            const response = await fetch(`https://week07-fullstack-database-app.onrender.com/movies/${id}`, {
                 method: 'DELETE',
             });
 

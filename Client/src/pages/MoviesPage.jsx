@@ -10,7 +10,7 @@ export default function MoviesPage() {
      // useEffect runs once when the component loads (empty dependency array [])
     useEffect(() => {
         async function fetchData() { 
-            const res = await fetch(`http://localhost:7070/movies`) //fetch movies from local api
+            const res = await fetch(`https://week07-fullstack-database-app.onrender.com/movies`) //fetch movies from local api
             const data = await res.json() //convert response to JSON
             setMovies(data) // update the state(movies array) with the fetched movies
         }
