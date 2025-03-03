@@ -1,0 +1,64 @@
+
+.individual-movie-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.individual-movie-page h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.individual-movie-page img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.individual-movie-page p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.individual-movie-page strong {
+    color: #333;
+}
+
+.individual-movie-page ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.individual-movie-page li {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d11a2a;
+}
+
+button:focus {
+    outline: none;
+}

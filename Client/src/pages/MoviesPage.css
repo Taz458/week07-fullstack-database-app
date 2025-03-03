@@ -1,0 +1,54 @@
+/* Movies Page Styles */
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.movies-container div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movies-container div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.movies-container img {
+    width: 100%;
+    height: 300px; /* Ensures consistency across all movie images */
+    object-fit: contain; /* This ensures the entire image fits inside the container without cropping */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    background-color: #f4f4f4;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.movie-title:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .movies-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
